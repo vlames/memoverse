@@ -5,7 +5,7 @@
 ## Access application on the web
 * Visit this page: TO_BE_COMPLETED
 
-## Build/Run/Stop Application Manually
+## Access application manually
 
 ### Using your computer os for memoverse environment
 #### Requirements
@@ -19,7 +19,7 @@
 * Install dependencies using ```pip install -r requirements.txt``` command
 * Run the application using ```python application.py```
 * Open your favorite browser and access the application at the following address: ```http://0.0.0.0:8000/```
-## Stopping the application
+#### Stopping the application
 * In your terminal press ```ctrl+c``` to terminate the server
 * Type ```deactivate``` to leave the local virtual environment
 
