@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block content %}
+  <form class="mt-4 px-5" action="{{ url_for('addverse') }}" method="POST">
+    <fieldset class="d-flex justify-content-center">
+      <div class="form-group">
+        <legend class="form-group"></legend>
+        <div class="form-group">
+          <label for="book-select">Select a book</label>
+          <select name="book-select" id="book-select" class="custom-select custom-select-md" multiple size="1" disabled>
+            <option value="unacceptable p-5">Empty</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="chapter-select">Select a chapter</label>
+          <select name="chapter-select" id="chapter-select" class="custom-select custom-select-md" multiple size="1" disabled>
+            <option value="unacceptable">Empty</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="verse-select">Select a verse</label>
+          <select name="verse-select" id="verse-select" class="custom-select custom-select-md" multiple size="1" disabled>
+            <option value="unacceptable">Empty</option>
+          </select>
+        </div>
+        <div id="bible-verse-group" class="form-group border border-color-light rounded p-3" style="display: none;">
+          <div class="api-bible-content">
+            <div class="scripture-styles" id="bible-verse" name="bible-verse">Empty</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="theme-box">Theme</label>
+          <input type="text" name="theme" id="theme-box" class="form-control" placeholder="Empty" disabled>
+        </div>
+        <div class="form-group">
+          <input class="btn btn-primary" type="button" id="button" value="Add Verse" disabled>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+  <script src="{{ url_for('static', filename='process.js') }}"></script>
+{% endblock %}

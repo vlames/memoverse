@@ -1,0 +1,38 @@
+/* The file provides styling to the apps content */
+
+/* Centers the figure on the main page */
+figure.flex-center {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  top: -3%;
+  z-index: -1;
+}
+
+div.form-group {
+  width: 300px;
+}
+
+option {
+  padding: 10px;
+}
+
+section.card {
+  min-width: 370px;
+  max-width: 370px;
+}
+
+input#theme-box {
+  height: 54px;
+  padding: 21px;
+}
+
+section.card-group {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}

@@ -1,0 +1,13 @@
+<!--
+File: index.html
+Description: the file defines what the main page will look like
+-->
+
+{% extends "layout.html" %}
+{% block content %}
+	<figure class="flex-center">
+    <!-- Obtained from https://www.pngwave.com/png-clip-art-xntjt -->
+    <img src="{{ url_for('static', filename='scroll.png') }}" alt="a scroll with a bible verse from Hebrews 11:1">
+    <figcaption class="text-secondary">Scroll Illustration</figcaption>
+  </figure>
+{% endblock %}
