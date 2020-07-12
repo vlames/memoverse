@@ -2,10 +2,10 @@
 flask
 
 # AWS libraries
-boto3
+# boto3
 
 # Python library for working with api
 requests
 
 # Python WSGI HTTP server (connects web servers such as nginx to app)
-gunicorn
+# gunicorn
