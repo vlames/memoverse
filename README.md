@@ -11,7 +11,7 @@
 ### Using your computer os for memoverse environment
 
 #### Requirements
-* Linux OS, Terminal, Python, Python3, Virtualenv, API.Bible API Key
+* Linux OS, Terminal, Python, Python3, Virtualenv, [API.Bible](https://scripture.api.bible/signup) API Key
 * Note: will also work on Mac OS but with different commands for creating virtual environment
 #### Starting the application
 * Open terminal and clone this repository
