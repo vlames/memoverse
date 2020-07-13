@@ -5,11 +5,14 @@
 ## Access application on the web
 * Visit this page: [MemoVerse](https://memoverse.herokuapp.com/)
 
+
 ## Access application manually - TO_VERIFY
 
 ### Using your computer os for memoverse environment
+
 #### Requirements
 * Linux OS, Terminal, Python, Python3, Virtualenv, API.Bible API Key
+* Note: will also work on Mac OS but with different commands for creating virtual environment
 #### Starting the application
 * Open terminal and clone this repository
 * Change into the memoverse directory
@@ -23,17 +26,20 @@
 * In your terminal press ```ctrl+c``` to terminate the server
 * Type ```deactivate``` to leave the local virtual environment
 
-### Using Docker - TO_FINISH
+
+### Using Docker
+
 #### Requirements
-* Docker and Docker Hub accounts
+* Install [Docker Desktop](https://www.docker.com/products/docker-desktop)
+* Obtain [API.Bible](https://scripture.api.bible/signup) Key
 #### How to run
-* Run docker from terminal
-* Run application by ```docker run -di -p 8000:8000 vlames/memoverse:v3``` command
+* Start Docker
+* Using Terminal, run application by ```docker run -di -p 8000:80 -e BIBLE_API_KEY=PLACE_YOUR_KEY_HERE vlames/memoverse``` command
 * Open your favorite browser and access the application at the following address: ```http://0.0.0.0:8000/``` 
-#### Stopping the application
+#### How to stop
 * In terminal, do ```docker ps``` to find container id
 * Stop container by ```docker stop container_id```
-#### Cleaning up
+#### Clean up
 * Find container id by ```docker ps -a```
 * In terminal, type ```docker rm container_id``` to delete container
 * Find image id by ```docker images```
