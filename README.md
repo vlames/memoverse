@@ -5,7 +5,7 @@
 ## Access application on the web
 * Visit this page: [MemoVerse](https://memoverse.herokuapp.com/)
 
-## Access application manually
+## Access application manually - TO_VERIFY
 
 ### Using your computer os for memoverse environment
 #### Requirements
@@ -23,7 +23,7 @@
 * In your terminal press ```ctrl+c``` to terminate the server
 * Type ```deactivate``` to leave the local virtual environment
 
-### Using Docker
+### Using Docker - TO_FINISH
 #### Requirements
 * Docker and Docker Hub accounts
 #### How to run
