@@ -25,4 +25,4 @@ application.add_url_rule('/display/', view_func=Display.as_view('display'), meth
 
 # Runs the application on port 8000 with debugging enabled
 if __name__ == '__main__':
-    application.run(debug=True)
+    application.run(host='0.0.0.0', port=8000, debug=True)
