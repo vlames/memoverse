@@ -6,7 +6,7 @@
 * Visit this page: [MemoVerse](https://memoverse.herokuapp.com/)
 
 
-## Access application manually - TO_VERIFY
+## Access application manually
 
 ### Using your computer os for memoverse environment
 
