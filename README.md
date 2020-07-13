@@ -11,8 +11,7 @@
 #### Requirements
 * Linux OS, Terminal, Python, Python3, Virtualenv, API.Bible API Key
 #### Starting the application
-* Open terminal and change into the desired location to store the app
-* Clone the directory to your computer
+* Open terminal and clone this repository
 * Change into the memoverse directory
 * Create BIBLE_API_KEY environment variable by ```export BIBLE_API_KEY=PLACE_YOUR_KEY_HERE```
 * Create local virtual environment using ```virtualenv -p python3 env``` command
