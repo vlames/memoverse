@@ -20,3 +20,12 @@ class Model():
         :raises: Database errors on connection and insertion
         """
         pass
+
+    def remove(self, reference):
+        """
+        Removes entry from database
+        :param reference: String
+        :return: None
+        :raises: Database errors on connection and insertion
+        """
+        pass
