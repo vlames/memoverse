@@ -2,7 +2,7 @@
 # Description: the file implements a class to direct a user to html page, submit data, and redirecting back to the main page
 
 # Imports the necessary app modules
-from flask import redirect, request, url_for, render_template
+from flask import request, url_for, render_template
 from flask.views import MethodView
 import model
 import json
