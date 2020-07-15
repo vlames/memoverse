@@ -60,3 +60,19 @@ class model(Model):
         connection.commit()
         cursor.close()
         return True
+        
+    def remove(self, reference):
+        """
+        Removes an entry from database
+		:param reference: String
+        :return: True
+        :raises: Database errors on connection and deletion
+        """
+        params = {"reference":reference}
+        connection = sqlite3.connect(DB_FILE)
+        cursor = connection.cursor()
+        cursor.execute("delete from memoverse where reference = :reference", params)
+
+        connection.commit()
+        cursor.close()
+        return True
