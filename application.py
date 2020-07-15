@@ -6,6 +6,7 @@ from flask.views import MethodView
 from index import Index
 from viewverses import ViewVerses
 from addverse import AddVerse
+from remverse import RemVerse
 from process import Process
 from display import Display
 
