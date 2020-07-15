@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+  <form class="mt-4 px-5" action="{{ url_for('remverse') }}" method="POST">
+    <fieldset class="d-flex justify-content-center">
+      <div class="form-group">
+        <legend class="form-group"></legend>
+        <div class="form-group">
+          <label for="book-name">Book name</label>
+          <input type="text" name="book-name" id="book-name" class="form-control" placeholder="Type a book name" required>
+        </div>
+        <div class="form-group">
+          <label for="book-chapter">Book chapter</label>
+          <input type="text" name="book-chapter" id="book-chapter" class="form-control" placeholder="Type a chapter number" required>
+        </div>
+        <div class="form-group">
+          <label for="book-verse">Book chapter</label>
+          <input type="text" name="book-verse" id="book-verse" class="form-control" placeholder="Type a verse number" required>
+        </div>
+        <div class="form-group">
+          <input class="btn btn-danger" type="submit" id="button" value="Remove Verse">
+        </div>
+      </div>
+    </fieldset>
+  </form>
+{% endblock %}
