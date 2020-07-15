@@ -19,7 +19,7 @@ application.add_url_rule('/viewverse/', view_func=ViewVerses.as_view('viewverses
 # Specifies the page to serve and submit information through for the route "addverse"
 application.add_url_rule('/addverse/', view_func=AddVerse.as_view('addverse'), methods=['GET', 'POST'])
 # Specifies the page to serve and delete verses through for the route "remverse"
-application.add_url_rule('/remverse/', view_func=RemVerse.as_view('remverse'), methods=['POST'])
+application.add_url_rule('/remverse/', view_func=RemVerse.as_view('remverse'), methods=['GET', 'POST'])
 # Specifies the resource to serve and return information through for the route "process"
 application.add_url_rule('/process/', view_func=Process.as_view('process'), methods=['POST'])
 # Specifies the resource to serve and return information through for the route "display"
