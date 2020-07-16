@@ -1,5 +1,10 @@
 /* The file provides styling to the apps content */
 
+.page-header {
+  display: flex;
+  justify-content: center;
+}
+
 /* Centers the figure on the main page */
 figure.flex-center {
   display: flex;
@@ -35,4 +40,10 @@ section.card-group {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    display: block;
+  }
 }
