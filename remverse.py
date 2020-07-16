@@ -10,7 +10,7 @@ class RemVerse(MethodView):
 		return render_template("remverse.html")
 	
 	def post(self):
-		reference = request.form["book-name"] + " " + request.form["book-chapter"] + ":" + request.form["book-verse"]
+		reference = request.form["book-name"].strip() + " " + request.form["book-chapter"].strip() + ":" + request.form["book-verse"].strip()
 		appmodel = model.get_model()
 		entries = [dict(reference=row[0], theme=row[1], verse=row[2], fums=row[3]) for row in appmodel.select()]
 		for entry in entries:
